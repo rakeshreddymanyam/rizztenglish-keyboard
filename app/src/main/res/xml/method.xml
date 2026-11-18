@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.rakesh.rizztenglish.MainActivity"
+    android:supportsSwitchingToNextInputMethod="true">
+    <subtype
+        android:imeSubtypeLocale="en_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="RizzTenglish (Telugu • English)" />
+</input-method>

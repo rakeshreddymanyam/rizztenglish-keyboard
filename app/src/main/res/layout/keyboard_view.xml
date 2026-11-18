@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#020617"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="8dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLangToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#1E293B"
+                android:minWidth="0dp"
+                android:paddingHorizontal="10dp"
+                android:text="Only Telugu"
+                android:textAllCaps="false"
+                android:textColor="#FDA4AF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnVibeToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#1E293B"
+                android:minWidth="0dp"
+                android:paddingHorizontal="10dp"
+                android:text="Playful"
+                android:textAllCaps="false"
+                android:textColor="#FCD34D"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnReplyClipboard"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#E11D48"
+                android:minWidth="0dp"
+                android:paddingHorizontal="10dp"
+                android:text="Reply Copied"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnExpandMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#7C3AED"
+                android:minWidth="0dp"
+                android:paddingHorizontal="10dp"
+                android:text="Expand Msg"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnFirstChat"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:backgroundTint="#D97706"
+                android:minWidth="0dp"
+                android:paddingHorizontal="10dp"
+                android:text="1st Chat"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tvRizzStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="3dp"
+        android:text="Copy a text &amp; tap 'Reply Copied', or type &amp; tap 'Expand Msg'"
+        android:textColor="#94A3B8"
+        android:textSize="10sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsvSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="4dp"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llSuggestionsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/llQwertyRows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="3dp" />
+
+</LinearLayout>
