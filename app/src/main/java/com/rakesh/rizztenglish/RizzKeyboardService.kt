@@ -206,9 +206,9 @@ class RizzKeyboardService : InputMethodService() {
         }
 
         val taskPrompt = when (mode) {
-            "expand" -> "Upgrade this boring message "$inputText" into 3 crazy romantic, flirty, charming 1-2 sentence texts that spark a long reply."
+            "expand" -> "Upgrade this boring message \"$inputText\" into 3 crazy romantic, flirty, charming 1-2 sentence texts that spark a long reply."
             "first" -> "Write 3 natural, smooth first-message openers to start a flirty/romantic chat (never boring 'Hi')."
-            else -> "Incoming text from crush: "$inputText". Write 3 direct, natural human replies that match their exact message."
+            else -> "Incoming text from crush: \"$inputText\". Write 3 direct, natural human replies that match their exact message."
         }
 
         val fullPrompt = """
